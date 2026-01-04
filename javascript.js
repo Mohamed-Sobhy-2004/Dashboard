@@ -26,7 +26,7 @@ async function gets(){
     
      res = await fetch(Apisde);
      data = await res.json();
-    console.log(data)
+    
     getdat(data.users)
     
       ac(data.users)
@@ -143,4 +143,5 @@ function calc(countus,ord){
  let calccs = (ord / countus)*100;
  document.getElementById('rev').innerText = `${Math.floor(calccs)}%`
 }
+
 gets()
